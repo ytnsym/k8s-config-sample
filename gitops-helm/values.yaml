@@ -1,0 +1,14 @@
+#Common
+label: gitops
+
+#Deployment
+replicas: 3
+image:
+  repository: docker.io/yuh6513/gitops-go-app
+  tag: 0
+
+imageConfig:
+  pullPolicy: IfNotPresent
+
+#Service
+service_type: LoadBalancer
